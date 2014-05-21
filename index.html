@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+    <p>We need <span id="startup"></span> for <span id="journalismy-thing"></span> because we don't work at a fucking Burger King.</p>
+    <script type="text/javascript">
+    
+    (function() {
+        var mad_libber = {
+            data: null,
+
+            init: function(data) {
+                var self = this;
+                self.data = data;
+            },
+
+            spin_the_wheel: function() {
+                var self = this;
+
+                var random_startup_text = self.data.startups[Math.floor(Math.random()*self.data.startups.length)],
+                    random_journalismy_text = self.data.journalismy_things[Math.floor(Math.random()*self.data.journalismy_things.length)];
+
+                $('#startup').text(random_startup_text);
+                $('#journalismy-thing').text(random_journalismy_text);
+            }
+        };
+
+        $.ajax({
+            url: "data.json",
+            dataType: 'json',
+            success: function(data) {
+                mad_libber.init(data);
+                mad_libber.spin_the_wheel();
+            }
+        });
+
+
+    })();
+    </script>
