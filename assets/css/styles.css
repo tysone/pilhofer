@@ -11,13 +11,6 @@ a {
   color: #007094;
 }
 
-h1 {
-  font-family: "baroque-text";
-  font-size: 70px;
-  font-weight: 400;
-  margin: 0 0 20px;
-}
-
 h2 {
   text-transform: uppercase;
   margin: 0 15% 30px;
@@ -77,4 +70,9 @@ small {
 
 .illo img {
   max-width: 220px;
+}
+
+.awesome {
+	width: 80%;
+  margin-bottom: 20px;
 }

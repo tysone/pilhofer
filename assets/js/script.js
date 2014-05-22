@@ -34,8 +34,7 @@
   };
 
   $(function(){
-    $("h1").fitText().fitText(1.1,{ maxFontSize: '84px'});
-    $("h2").fitText().fitText(1.8,{ maxFontSize: '18px'});
+    $("h2").fitText().fitText(1.8,{ maxFontSize: '16px'});
 
     $.ajax({
       url: "data.json",
