@@ -47,10 +47,7 @@
     
     $('#spin').click(function(){
       mad_libber.spin_the_wheel();
-    });
-
-    $('.aron-quote, .duenes').click(function(){
-      mad_libber.toggle_duenes();
+      ga('send', 'event', 'button', 'click', 'new_idea');
     });
 
     /********** EASTER EGGS **********/
@@ -67,12 +64,6 @@
       });
     };
     easter_egg.load();
-
-    // Shake detection
-    window.addEventListener('shake', shakeEventDidOccur, false);
-    function shakeEventDidOccur () {
-      mad_libber.toggle_duenes();
-    }
 
   });
 
