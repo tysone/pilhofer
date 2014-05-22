@@ -16,6 +16,9 @@
     spin_the_wheel: function() {
       var self = this;
 
+      $('.aron-quote').show();
+      $('#her-majesty').hide();
+
       $('#startup').text(self._get_random(self.data.startups));
       $('#journalismy-thing').text(self._get_random(self.data.journalismy_things));
       $('#killer-feature').text(self._get_random(self.data.killer_features));
@@ -57,7 +60,8 @@
     var easter_egg = new Konami();
     easter_egg.code = function() {
       MIDI.loadPlugin(function () {
-        $('.aron-quote').html('<img src="assets/img/thequeen.jpg">');
+        $('.aron-quote').hide();
+        $('#her-majesty').show().html('<img src="assets/img/thequeen.jpg">');
         player = MIDI.Player;
         player.loadFile('assets/audio/god_save_the_queen.mid', player.start);
       });
