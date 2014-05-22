@@ -37,6 +37,10 @@
     $('#spin').click(function(){
       mad_libber.spin_the_wheel();
     });
+
+    var easter_egg = new Konami();
+    easter_egg.code = function() { alert('Konami code!'); };
+    easter_egg.load();
   });
 
 })();
