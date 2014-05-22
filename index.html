@@ -5,26 +5,32 @@
 </head>
 
 <body>
-    <p>We need <span id="startup"></span> for <span id="journalismy-thing"></span> because we don't work at a fucking Burger King.</p>
+    <p>It's like <span id="startup"></span> for <span id="journalismy-thing"></span> and it has to <span id="killer-feature"></span>. <span id="aron-quote"></span></p>
+    <p><a id="again" href="#">AGAIN</a></p>
     <script type="text/javascript">
     
     (function() {
         var mad_libber = {
             data: null,
 
+            _get_random: function(array) {
+                return array[Math.floor(Math.random() * array.length)];
+            },
+
             init: function(data) {
                 var self = this;
                 self.data = data;
+
+                self.spin_the_wheel();
             },
 
             spin_the_wheel: function() {
                 var self = this;
 
-                var random_startup_text = self.data.startups[Math.floor(Math.random()*self.data.startups.length)],
-                    random_journalismy_text = self.data.journalismy_things[Math.floor(Math.random()*self.data.journalismy_things.length)];
-
-                $('#startup').text(random_startup_text);
-                $('#journalismy-thing').text(random_journalismy_text);
+                $('#startup').text(self._get_random(self.data.startups));
+                $('#journalismy-thing').text(self._get_random(self.data.journalismy_things));
+                $('#killer-feature').text(self._get_random(self.data.killer_features));
+                $('#aron-quote').text(self._get_random(self.data.aron_quotes));
             }
         };
 
@@ -33,7 +39,10 @@
             dataType: 'json',
             success: function(data) {
                 mad_libber.init(data);
-                mad_libber.spin_the_wheel();
+
+                $("#again").click(function() {
+                  mad_libber.spin_the_wheel();
+                });
             }
         });
 
