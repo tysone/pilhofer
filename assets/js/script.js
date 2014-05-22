@@ -26,6 +26,9 @@
   };
 
   $(function(){
+
+    /********** MAIN **********/
+
     $("h1").fitText().fitText(1.5);
 
     $.ajax({
@@ -40,13 +43,19 @@
       mad_libber.spin_the_wheel();
     });
 
+    /********** EASTER EGGS **********/
+
+    // Konami Code
     var easter_egg = new Konami();
-    easter_egg.code = function() { alert('Konami code!'); };
+    easter_egg.code = function() { 
+      alert('Konami code!');
+    };
     easter_egg.load();
 
+    // Shake detection
     window.addEventListener('shake', shakeEventDidOccur, false);
     function shakeEventDidOccur () {
-      alert('sdfsfsdf');
+      alert('Moving and shaking');
     }
 
   });
