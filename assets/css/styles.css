@@ -24,7 +24,6 @@ h2 {
   font-size: 50px;
   min-height: 200px;
   margin: 20px 0;
-  text-align: left;
 }
 
 
@@ -53,10 +52,17 @@ small {
   font-weight: 700;
 }
 
+button {
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
 @media (min-width:600px) {
   .wrapper {
     float: right;
     width: 80%;
+    text-align: left;
   }
 
   .illo {
@@ -73,6 +79,6 @@ small {
 }
 
 .awesome {
-	width: 80%;
+	width: 70%;
   margin-bottom: 20px;
 }
