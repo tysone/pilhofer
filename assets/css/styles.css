@@ -52,3 +52,10 @@ small {
   color: #007094;
   font-weight: 700;
 }
+
+div.awesome-img {
+	margin-bottom: 20px;
+}
+img.awesome {
+	width: 80%
+}
