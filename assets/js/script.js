@@ -48,6 +48,7 @@
     var easter_egg = new Konami();
     easter_egg.code = function() {
       MIDI.loadPlugin(function () {
+        $('.aron-quote').text('GOD SAVE THE QUEEN!');
         player = MIDI.Player;
         player.loadFile('assets/audio/god_save_the_queen.mid', player.start);
       });
