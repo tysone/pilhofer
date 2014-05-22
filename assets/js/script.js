@@ -21,12 +21,13 @@
       $('#killer-feature').text(self._get_random(self.data.killer_features));
       $('#pilhofer-ism').text(self._get_random(self.data.pilhofer_isms));
 
-      $(".pilhofer-ism").fitText().fitText(2);
+      $(".aron-quote").fitText(1.9, { minFontSize: '30px', maxFontSize: '50px'});
     }
   };
 
   $(function(){
-    $("h1").fitText().fitText(1.5);
+    $("h1").fitText().fitText(1.1,{ maxFontSize: '84px'});
+    $("h2").fitText().fitText(1.8,{ maxFontSize: '18px'});
 
     $.ajax({
       url: "data.json",
