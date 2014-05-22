@@ -32,6 +32,13 @@ h2 {
   margin: 50px 40px;
 }
 
+
+.duenes {
+  display: none;
+  min-height: 200px;
+  font-size: 40px;
+}
+
 #spin {
   color: #007094;
   padding: 8px 12px;

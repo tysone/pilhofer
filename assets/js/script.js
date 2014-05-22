@@ -22,6 +22,11 @@
       $('#pilhofer-ism').text(self._get_random(self.data.pilhofer_isms));
 
       $(".aron-quote").fitText(1.9, { minFontSize: '30px', maxFontSize: '50px'});
+    },
+
+    toggle_duenes: function(){
+      $('main').toggle();
+      $('.duenes').toggle();
     }
   };
 
@@ -41,6 +46,10 @@
       mad_libber.spin_the_wheel();
     });
 
+    $('.aron-quote, .duenes').click(function(){
+      mad_libber.toggle_duenes();
+    });
+
     /********** EASTER EGGS **********/
 
 
@@ -57,7 +66,7 @@
     // Shake detection
     window.addEventListener('shake', shakeEventDidOccur, false);
     function shakeEventDidOccur () {
-      alert('Moving and shaking');
+      mad_libber.toggle_duenes();
     }
 
   });
