@@ -44,6 +44,11 @@
     easter_egg.code = function() { alert('Konami code!'); };
     easter_egg.load();
 
+    window.addEventListener('shake', shakeEventDidOccur, false);
+    function shakeEventDidOccur () {
+      alert('sdfsfsdf');
+    }
+
   });
 
 })();
