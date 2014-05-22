@@ -57,6 +57,7 @@
     var easter_egg = new Konami();
     easter_egg.code = function() {
       MIDI.loadPlugin(function () {
+        $('.aron-quote').html('<img src="assets/img/thequeen.jpg">');
         player = MIDI.Player;
         player.loadFile('assets/audio/god_save_the_queen.mid', player.start);
       });
