@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <meta charset="utf-8">
+  
+  <title>AwesomePilhofer.com</title>
+  
+  <meta name="description" content="Aron Pilhofer has some awesome ideas about building news apps.">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="normalize.css" rel="stylesheet" media="all">  
+  <link href="styles.css" rel="stylesheet" media="all">
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script src="script.js"></script>
+
+  <script type="text/javascript" src="//use.typekit.net/cez8qys.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
-
 <body>
-    <p>We need <span id="startup"></span> for <span id="journalismy-thing"></span> because we don't work at a fucking Burger King.</p>
-    <script type="text/javascript">
-    
-    (function() {
-        var mad_libber = {
-            data: null,
 
-            init: function(data) {
-                var self = this;
-                self.data = data;
-            },
-
-            spin_the_wheel: function() {
-                var self = this;
-
-                var random_startup_text = self.data.startups[Math.floor(Math.random()*self.data.startups.length)],
-                    random_journalismy_text = self.data.journalismy_things[Math.floor(Math.random()*self.data.journalismy_things.length)];
-
-                $('#startup').text(random_startup_text);
-                $('#journalismy-thing').text(random_journalismy_text);
-            }
-        };
-
-        $.ajax({
-            url: "data.json",
-            dataType: 'json',
-            success: function(data) {
-                mad_libber.init(data);
-                mad_libber.spin_the_wheel();
-            }
-        });
+  <header role="banner">
+    <h1>AwesomePilhofer.com</h1>
+    <h2>Aron Pilhofer has some awesome ideas for building news apps! We’re going to miss him.</h2>
+  </header>
+  
+  <main role="main">
+    <p class="aron-quote">“We need a <span id="startup"></span> for <span id="journalismy-thing"></span> and it has to <span id="killer-feature"></span>. <span id="pilhofer-ism"></span>”</p>      
+  
+    <button id="spin">Next!</button>
+  </main>
+  
+  <footer role="contentinfo">
+    <small>A farewell gift, mostly in jest, from the interactive news team <a href="http://www.twitter.com/nytimes">@nytimes</a> to our fearless leader, <a href="http://www.twitter.com/pilhofer">@pilhofer</a>. Good luck at the <a href="https://twitter.com/guardian">@guardian!</a></small>    
+  </footer>
 
 
-    })();
-    </script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>  
+</body>
+</html>

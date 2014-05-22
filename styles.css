@@ -1,0 +1,47 @@
+body {
+  background-color: #00C3FF;
+  color: #fff;
+  color: rgba(255,255,255,.9);
+  text-align: center;
+  font-family: "museo-slab";
+}
+
+a {
+  color: #007094;
+}
+
+h1 {
+  font-family: "baroque-text";
+  font-size: 70px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 0 15%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #007094;
+}
+
+.aron-quote {
+  font-size: 50px;
+  min-height: 200px;
+  margin: 50px 40px;
+}
+
+#spin {
+  color: #007094;
+  padding: 8px 12px;
+  margin: 20px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+small {
+  font-size: 14px;
+  color: #007094;
+  font-weight: 700;
+}
