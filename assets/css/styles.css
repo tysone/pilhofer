@@ -4,6 +4,7 @@ body {
   color: rgba(255,255,255,.9);
   text-align: center;
   font-family: "museo-slab";
+  margin: 20px;
 }
 
 a {
@@ -14,12 +15,12 @@ h1 {
   font-family: "baroque-text";
   font-size: 70px;
   font-weight: 400;
-  margin: 20px;
+  margin: 0 0 20px;
 }
 
 h2 {
   text-transform: uppercase;
-  margin: 0 15%;
+  margin: 0 15% 30px;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 700;
@@ -29,7 +30,8 @@ h2 {
 .aron-quote {
   font-size: 50px;
   min-height: 200px;
-  margin: 50px 40px;
+  margin: 20px 0;
+  text-align: left;
 }
 
 
@@ -47,8 +49,32 @@ h2 {
   text-transform: uppercase;
 }
 
+footer {
+  clear: both;
+  padding-top: 20px;
+}
+
 small {
   font-size: 14px;
   color: #007094;
   font-weight: 700;
+}
+
+@media (min-width:600px) {
+  .wrapper {
+    float: right;
+    width: 80%;
+  }
+
+  .illo {
+    width: 16%;
+  }
+
+  .illo img {
+    width: 100%;
+  }
+}
+
+.illo img {
+  max-width: 220px;
 }
