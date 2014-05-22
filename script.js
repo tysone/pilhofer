@@ -20,12 +20,13 @@
       $('#killer-feature').text(random_killer_feature_text);
       $('#pilhofer-ism').text(random_pilhofer_text);
 
-      $(".aron-quote").fitText().fitText(2);
+      $(".aron-quote").fitText().fitText(2, { minFontSize: '30px'});
     }
   };
 
   $(function(){
-    $("h1").fitText().fitText(1.5);
+    $("h1").fitText().fitText(1.1);
+    $("h2").fitText().fitText(1.8,{ maxFontSize: '20px'});
     $.ajax({
       url: "data.json",
       dataType: 'json',
