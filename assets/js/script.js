@@ -26,8 +26,15 @@
   };
 
   $(function(){
+<<<<<<< HEAD
     $("h1").fitText().fitText(1.1,{ maxFontSize: '84px'});
     $("h2").fitText().fitText(1.8,{ maxFontSize: '18px'});
+=======
+
+    /********** MAIN **********/
+
+    $("h1").fitText().fitText(1.5);
+>>>>>>> 0fd19db476f4dbc847e3786de98900944fa45a0f
 
     $.ajax({
       url: "data.json",
@@ -41,9 +48,20 @@
       mad_libber.spin_the_wheel();
     });
 
+    /********** EASTER EGGS **********/
+
+    // Konami Code
     var easter_egg = new Konami();
-    easter_egg.code = function() { alert('Konami code!'); };
+    easter_egg.code = function() { 
+      alert('Konami code!');
+    };
     easter_egg.load();
+
+    // Shake detection
+    window.addEventListener('shake', shakeEventDidOccur, false);
+    function shakeEventDidOccur () {
+      alert('Moving and shaking');
+    }
 
   });
 
