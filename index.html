@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/konami.js"></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
 
             init: function(data) {
                 var self = this;
-                self.data = data;
 
+                self.data = data;
                 self.spin_the_wheel();
             },
 
@@ -46,6 +47,9 @@
             }
         });
 
+        var easter_egg = new Konami();
+        easter_egg.code = function() { alert('Konami code!'); }
+        easter_egg.load();
 
     })();
     </script>
