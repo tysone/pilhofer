@@ -43,10 +43,14 @@
 
     /********** EASTER EGGS **********/
 
+
     // Konami Code
     var easter_egg = new Konami();
     easter_egg.code = function() {
-      alert('Konami code!');
+      MIDI.loadPlugin(function () {
+        player = MIDI.Player;
+        player.loadFile('assets/audio/god_save_the_queen.mid', player.start);
+      });
     };
     easter_egg.load();
 
