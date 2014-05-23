@@ -48,9 +48,10 @@ h2 {
   display: none;
   min-height: 160px;
   font-size: 40px;
-  background-image: url(../img/duenes.png);
+  background-image: url(../img/pilhofer.jpg);
   background-position: top left;
   background-repeat: no-repeat;
+  background-size: 14%;
   padding-left: 140px;
 }
 
