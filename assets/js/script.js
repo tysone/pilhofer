@@ -24,6 +24,13 @@
       $('#killer-feature').text(self._get_random(self.data.killer_features));
       $('#pilhofer-ism').text(self._get_random(self.data.pilhofer_isms));
 
+      tw_intents = 'https://twitter.com/intent/tweet?';
+      tw_intents += 'url=http://www.awesomepilhofer.com';
+      tw_intents += '&hashtags=AwesomePilhofer';
+      tw_intents += '&text=' + $(".aron-quote").text();
+      //tw_intents = encodeURIComponent(tw_intents);
+      $('#tweet-action').attr('href', tw_intents);
+
       $(".aron-quote").fitText(1.9, { minFontSize: '30px', maxFontSize: '50px'});
     },
 

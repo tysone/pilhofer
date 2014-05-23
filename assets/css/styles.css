@@ -75,6 +75,23 @@ small {
   font-weight: 700;
 }
 
+#tweet-action {
+  padding: 8px 10px 8px 38px;
+  background: #fff url('https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_32.png') 5px 5px no-repeat;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "futura-pt", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 30px;
+  display: block;
+  max-width: 80px;
+  margin: 30px auto 0;
+}
+
+#tweet-action:hover {
+  text-decoration: underline;
+}
+
 small a {
   color: #0E91E9;
 }
@@ -89,12 +106,25 @@ button:active {
   background-color: orange;
 }
 
+.awesome {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
 @media (min-width:600px) {
   .wrapper {
     float: right;
     width: 80%;
     text-align: left;
   }
+
+  .awesome {
+  width: 60%;
+  }
+
+#tweet-action {
+  float: right;
+}
 
   .illo {
     position: absolute;
@@ -122,8 +152,5 @@ button:active {
   max-width: 110px;
 }
 
-.awesome {
-	width: 60%;
-  margin-bottom: 20px;
-}
+
 
