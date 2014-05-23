@@ -48,11 +48,11 @@ h2 {
   display: none;
   min-height: 160px;
   font-size: 40px;
-  background-image: url(../img/pilhofer.jpg);
+/*  background-image: url(../img/pilhofer.jpg);*/
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 14%;
-  padding-left: 140px;
+/*  padding-left: 140px;*/
 }
 
 #pixelhofer-shock {
@@ -110,6 +110,10 @@ button:active {
 
   .illo img {
     width: 100%;
+  }
+
+  h2 {
+    width: 50%;
   }
 }
 
