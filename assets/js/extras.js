@@ -3,6 +3,8 @@
     toggle_duenes: function(){
       $('main').toggle();
       $('.duenes').toggle();
+      $('#pixelhofer').toggle();
+      $('#pixelhofer-shock').toggle();
     }
   };
 
