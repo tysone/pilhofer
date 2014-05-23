@@ -36,6 +36,11 @@ h2 {
   margin: 0 auto;
 }
 
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .aron-quote {
   font-size: 50px;
   min-height: 200px;
@@ -146,11 +151,13 @@ button:active {
 
 .illo {
   overflow: hidden;
+  z-index: 1;
 }
 
 .illo img {
 /*  max-width: 220px;*/
-  max-width: 110px;
+/*  width: 100%;*/
+  max-width: 180px;
 }
 
 
