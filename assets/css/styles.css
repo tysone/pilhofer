@@ -19,11 +19,11 @@ a {
 h2 {
   text-transform: uppercase;
   margin: 0 auto 30px;
-  font-family: arial, helvetica, sans-serif;
+  font-family: "futura-pt", arial, helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
-  line-height: 1.5em;
+  line-height: 1.4em;
   color: #007094;
   width: 80%;
 }
@@ -39,20 +39,11 @@ h2 {
 .aron-quote {
   font-size: 50px;
   min-height: 200px;
-  margin: 20px 0;
-  max-width: 90%;
+  margin: 20px 10px;
 }
 
-
-.duenes {
-  display: none;
-  min-height: 160px;
-  font-size: 40px;
-/*  background-image: url(../img/pilhofer.jpg);*/
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: 14%;
-/*  padding-left: 140px;*/
+.aron-quote span:not(:last-child) {
+  font-weight: bold;
 }
 
 #pixelhofer-shock {
@@ -63,10 +54,11 @@ h2 {
   color: #fff;
   padding: 18px 24px;
   margin: 20px 0;
-  font-family: arial, helvetica, sans-serif;
+  font-family: "futura-pt", arial, helvetica, sans-serif;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 footer {
@@ -77,10 +69,14 @@ footer {
 }
 
 small {
-  font-family: arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-family: "futura-pt", arial, helvetica, sans-serif;
+  font-size: 15px;
   color: #007094;
   font-weight: 700;
+}
+
+small a {
+  color: #0E91E9;
 }
 
 button {
@@ -108,8 +104,8 @@ button:active {
     overflow: hidden;
   }
 
-  .illo img {
-    width: 100%;
+  .aron-quote {
+      max-width: 90%;
   }
 
   h2 {
